@@ -3,7 +3,7 @@ exports.config = {
   capabilities: {
     'browserName': 'chrome'
   },
-  sauceUser: 'sogoohta',
-  sauceKey: 'afcbb21b-694c-4003-8802-8ce4d1782ab1',
+  sauceUser: process.env.SAUCE_USERNAME,
+  sauceKey: process.env.SAUCE_ACCESS_KEY,
   specs: ['todo-spec.js']
 };
